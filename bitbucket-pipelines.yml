@@ -5,6 +5,7 @@ pipelines:
 
     # 👇 Adds Chromatic as a step in the pipeline
     - step:
+        image: node:16
         name: "Publish to Chromatic"
         # Other pipeline configuration
         script:
