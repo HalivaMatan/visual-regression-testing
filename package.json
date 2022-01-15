@@ -36,7 +36,7 @@
     "lint": "eslint --ext js,ts,tsx src",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=853671632ab8 --exit-zero-on-changes",
+    "chromatic": "npx chromatic --project-token=29c604916da9 --exit-zero-on-changes",
     "percy": "percy storybook http://localhost:6006",
     "applitools": "npx eyes-storybook"
   },
