@@ -31,6 +31,7 @@ const Notifications: React.FunctionComponent<INotificationsProps> = () => {
   return (
     <List
       sx={{
+        color: "white",
         width: "100%",
         height: "100%",
       }}
