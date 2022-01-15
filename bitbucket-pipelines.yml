@@ -1,6 +1,6 @@
 # A sample pipeline implementation
 pipelines:
-  default:
+  pull-requests:
     # Other steps in the pipeline
 
     # 👇 Adds Chromatic as a step in the pipeline
