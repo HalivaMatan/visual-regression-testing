@@ -1,25 +1,6 @@
 import * as React from "react";
 import { Doughnut } from "react-chartjs-2";
 
-import {
-  Chart,
-  ArcElement,
-  Tooltip,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-} from "chart.js";
-
-Chart.register(
-  ArcElement,
-  Tooltip,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement
-);
-
 interface IDoughnutChartProps {}
 const colors = ["#563BF4", "#30266F", "#7269F3"];
 

@@ -7,6 +7,7 @@ import Toggle from "./components/Toggle";
 import ProgressBar from "./components/ProgressBar";
 import LineChart from "./components/LineChart";
 import Parameters from "./components/Parameters";
+import DoughnutChart from "./components/DoughnutChart";
 
 function App() {
   return (
@@ -28,11 +29,17 @@ function App() {
           </DashboardCard>
         </Grid>
 
-        <Grid item md={3} xs={12} container spacing={2}>
+        <Grid item md={2} xs={12} container spacing={2}>
           <Parameters />
         </Grid>
 
-        <Grid item md={6} xs={12}>
+        <Grid item md={2} xs={12}>
+          <DashboardCard>
+            <DoughnutChart />
+          </DashboardCard>
+        </Grid>
+
+        <Grid item md={4} xs={12}>
           <DashboardCard title="Notifications" withHeader>
             <Grid
               marginTop={2}
@@ -60,7 +67,7 @@ function App() {
             </Grid>
           </DashboardCard>
         </Grid>
-        <Grid item md={3} xs={12}>
+        <Grid item md={4} xs={12}>
           <DashboardCard>
             <Toggle title="Lorem ipsum" />
             <Toggle title="Lorem ipsum" />

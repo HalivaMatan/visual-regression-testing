@@ -17,7 +17,7 @@ const DashboardCard: React.FunctionComponent<IDashboardCardProps> = (props) => {
     <Card
       sx={{
         height: "100%",
-        minWidth: 275,
+        width: "100%",
         backgroundColor: "#18191D",
         border: "solid 2px #22242D",
         color: "white",
