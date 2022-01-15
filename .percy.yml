@@ -1,3 +1,11 @@
 version: 2
+snapshot:
+  widths: [320, 600, 960, 1280, 1800]
 storybook:
-  args: { widths: [320, 600, 960, 1280, 1800] }
+  args: {}
+  queryParams: {}
+  waitForTimeout: 0
+  waitForSelector: ""
+  additionalSnapshots: []
+  include: []
+  exclude: []
