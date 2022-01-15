@@ -38,6 +38,7 @@ export const parameters = {
       ...INITIAL_VIEWPORTS,
     },
   },
+  chromatic: { viewports: [320, 1200] },
   grid: {
     gridOn: false,
     columns: 12,
