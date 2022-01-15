@@ -7,8 +7,8 @@ const Header: FC<IHeaderProps> = () => {
   return (
     <AppBar position="static" style={{ backgroundColor: "#22242D" }}>
       <Toolbar>
-        <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
-          Dashboard Title
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          Dashboard
         </Typography>
         <Button color="inherit">Login</Button>
       </Toolbar>
