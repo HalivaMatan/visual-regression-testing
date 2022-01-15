@@ -11,4 +11,4 @@ pipelines:
         script:
           - npm install
             # 👇 Runs Chromatic with the flag to prevent pipeline failure
-          - npm chromatic
+          - npm run chromatic
