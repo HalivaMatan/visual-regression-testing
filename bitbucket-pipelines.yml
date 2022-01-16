@@ -39,6 +39,7 @@ pipelines:
             # - mkdir -p /home/pwuser/Downloads
             # - mkdir -p /home/pwuser/tests
             # - chown -R pwuser:pwuser /home/pwuser
+            - sudo sysctl -w kernel.unprivileged_userns_clone=1
             - npm install
             # - cp -R . /home/pwuser/tests
             # - su - pwuser
