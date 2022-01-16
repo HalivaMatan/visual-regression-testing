@@ -15,7 +15,7 @@ const Parameter: React.FunctionComponent<IParameterProps> = (props) => {
       height="100%"
     >
       <Typography>{props.title}</Typography>
-      <Typography sx={{ color: "#B8BACD" }}>{props.value}</Typography>
+      <Typography sx={{ color: "#B8BAC2" }}>{props.value}</Typography>
     </Grid>
   );
 };
