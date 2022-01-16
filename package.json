@@ -38,8 +38,9 @@
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=29c604916da9 --exit-zero-on-changes",
     "chromatic:local": "npx chromatic --project-token=29c604916da9",
-    "percy": "percy storybook http://localhost:6006",
-    "applitools": "npx eyes-storybook"
+    "percy": "percy storybook:start",
+    "applitools": "npx eyes-storybook",
+    "e2e": "percy exec -- playwright test --reporter=dot"
   },
   "eslintConfig": {
     "extends": [
@@ -82,7 +83,9 @@
   "devDependencies": {
     "@applitools/eyes-storybook": "^3.27.2",
     "@percy/cli": "^1.0.0-beta.73",
+    "@percy/playwright": "^1.0.1",
     "@percy/storybook": "^4.1.0",
+    "@playwright/test": "^1.17.2",
     "@storybook/addon-actions": "^6.4.13",
     "@storybook/addon-essentials": "^6.4.13",
     "@storybook/addon-links": "^6.4.13",

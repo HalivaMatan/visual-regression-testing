@@ -14,11 +14,21 @@ pipelines:
             - npm run chromatic
       - step:
           image: node:16
-          name: "Publish to Chromatic"
+          name: "Publish to percy"
+          # Other pipeline configuration
+          script:
+            - npm install
+              # 👇 Runs Chromatic with the flag to prevent pipeline failure
+            - npm run percy
+          environment:
+            - PERCY_TOKEN=$PERCY_TOKEN
+      - step:
+          image: node:16
+          name: "Publish to applitools"
           # Other pipeline configuration
           script:
             - npm install
               # 👇 Runs Chromatic with the flag to prevent pipeline failure
             - npm run applitools
           environment:
-            - APPLITOOLS_API_KEY=Z2K100Cnz7jT8yWm5TjZpWjDgnloAXGHmt0AEBls4PiTQ110
+            - APPLITOOLS_API_KEY=$APPLITOOLS_API_KEY
