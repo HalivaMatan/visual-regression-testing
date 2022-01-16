@@ -37,8 +37,8 @@ pipelines:
             #   mkdir -p /home/pwuser/Downloads \
             #   mkdir -p /home/pwuser/tests \
             #   chown -R pwuser:pwuser /home/pwuser
-            - npm run build-storybook -- --quiet
             - npm install
+            - npm run build-storybook -- --quiet
             - npm run applitools
           environment:
             - APPLITOOLS_API_KEY=$APPLITOOLS_API_KEY
