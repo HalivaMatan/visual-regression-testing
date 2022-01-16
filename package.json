@@ -36,8 +36,8 @@
     "lint": "eslint --ext js,ts,tsx src",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=29c604916da9 --exit-zero-on-changes",
-    "chromatic:local": "npx chromatic --project-token=29c604916da9",
+    "chromatic": "npx chromatic --project-token=e470830cb1d8 --exit-zero-on-changes",
+    "chromatic:local": "npx chromatic --project-token=e470830cb1d8",
     "percy": "percy storybook ./storybook-static",
     "applitools": "npx eyes-storybook",
     "e2e": "percy exec -- playwright test --reporter=dot"
