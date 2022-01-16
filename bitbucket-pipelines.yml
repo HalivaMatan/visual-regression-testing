@@ -33,18 +33,18 @@ pipelines:
           script:
             # 👇 Runs Chromatic with the flag to prevent pipeline failure
             - apt-get update && apt-get install -y ca-certificates fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgbm1 libgcc1 libglib2.0-0 libgtk-3-0 libnspr4 libnss3 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 lsb-release wget xdg-utils
-            - pwd
-            - ls -a
-            - groupadd -r pwuser && useradd -r -g pwuser -G audio,video pwuser
-            - mkdir -p /home/pwuser/Downloads
-            - mkdir -p /home/pwuser/tests
-            - chown -R pwuser:pwuser /home/pwuser
+            - apt-get update && apt-get install chromium-browser
+            # - ls -a
+            # - groupadd -r pwuser && useradd -r -g pwuser -G audio,video pwuser
+            # - mkdir -p /home/pwuser/Downloads
+            # - mkdir -p /home/pwuser/tests
+            # - chown -R pwuser:pwuser /home/pwuser
             - npm install
-            - cp -R . /home/pwuser/tests
-            - su - pwuser
-            - cd /home/pwuser/tests
-            - pwd
-            - ls -a
+            # - cp -R . /home/pwuser/tests
+            # - su - pwuser
+            # - cd /home/pwuser/tests
+            # - pwd
+            # - ls -a
             - npm run build-storybook -- --quiet
             - npm run applitools --no-sandbox
           environment:
