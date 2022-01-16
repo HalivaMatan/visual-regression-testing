@@ -12,3 +12,11 @@ pipelines:
             - npm install
               # 👇 Runs Chromatic with the flag to prevent pipeline failure
             - npm run chromatic
+      - step:
+          image: node:16
+          name: "Publish to Applitools"
+          # Other pipeline configuration
+          script:
+            - npm install
+              # 👇 Runs Chromatic with the flag to prevent pipeline failure
+            - npm run applitools
