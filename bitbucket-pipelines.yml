@@ -14,7 +14,7 @@ pipelines:
             - npm run chromatic
       - step:
           image: node:16
-          name: "Publish to Chromatic"
+          name: "Publish to Chromatic2"
           # Other pipeline configuration
           script:
             - npm install
