@@ -1,6 +1,5 @@
 module.exports = {
   puppeteerOptions: {
-    executablePath: "/usr/bin/chromium-browser",
     args: ["--no-sandbox"],
   },
   browser: [
