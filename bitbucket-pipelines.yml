@@ -39,12 +39,12 @@ pipelines:
             - mkdir -p /home/pwuser/Downloads
             - mkdir -p /home/pwuser/tests
             - chown -R pwuser:pwuser /home/pwuser
+            - npm install
             - cp -R . /home/pwuser/tests
             - su - pwuser
             - cd /home/pwuser/tests
             - pwd
             - ls -a
-            - npm install
             - npm run build-storybook -- --quiet
             - npm run applitools --no-sandbox
           environment:
