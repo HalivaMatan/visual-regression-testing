@@ -39,11 +39,6 @@ export const parameters = {
     },
   },
   chromatic: { viewports: [320, 600, 960, 1280, 1800] },
-  percy: {
-    args: {
-      widths: [320, 600, 960, 1280, 1800],
-    },
-  },
   grid: {
     gridOn: false,
     columns: 12,
