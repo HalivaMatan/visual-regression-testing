@@ -9,3 +9,7 @@ storybook:
   additionalSnapshots: []
   include: []
   exclude: []
+discovery:
+  launch-options:
+    headless: true # default
+    args: ["--no-sandbox"], # browser arguments/flags
