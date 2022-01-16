@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "snapshot": {
+    "widths": [
+      320,
+      600,
+      960,
+      1280,
+      1800
+    ],
+    "minHeight": 1024,
+    "percyCSS": ""
+  },
+  "discovery": {
+    "launch-options": {
+      "args": [
+        "--no-sandbox"
+      ]
+    }
+  },
+  "static": {
+    "cleanUrls": false
+  },
+  "upload": {
+    "files": "**/*.{png,jpg,jpeg}",
+    "ignore": "",
+    "stripExtensions": false
+  }
+}
