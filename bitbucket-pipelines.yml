@@ -12,18 +12,18 @@ pipelines:
             - npm install
               # 👇 Runs Chromatic with the flag to prevent pipeline failure
             - npm run chromatic
-      - step:
-          image: node:16
-          name: "Publish to percy"
-          # Other pipeline configuration
-          script:
-            - npm install
-            - npm run build-storybook -- --quiet
-            - apt-get install -y libnss3 libxss1 libasound2
-              # 👇 Runs Chromatic with the flag to prevent pipeline failure
-            - npm run percy
-          environment:
-            - PERCY_TOKEN=$PERCY_TOKEN
+      # - step:
+      #     image: node:16
+      #     name: "Publish to percy"
+      #     # Other pipeline configuration
+      #     script:
+      #       - npm install
+      #       - npm run build-storybook -- --quiet
+      #       - apt-get install -y libnss3 libxss1 libasound2
+      #         # 👇 Runs Chromatic with the flag to prevent pipeline failure
+      #       - npm run percy
+      #     environment:
+      #       - PERCY_TOKEN=$PERCY_TOKEN
       - step:
           image: node:16
           name: "Publish to applitools"
