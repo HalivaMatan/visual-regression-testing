@@ -1,4 +1,8 @@
 module.exports = {
+  puppeteerOptions: {
+    executablePath: "/usr/bin/chromium-browser",
+    args: ["--no-sandbox"],
+  },
   browser: [
     { width: 320, height: 1200, name: "chrome" },
     { width: 600, height: 1200, name: "chrome" },
