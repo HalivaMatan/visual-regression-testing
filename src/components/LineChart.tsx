@@ -27,7 +27,7 @@ const lineData = {
   datasets: [
     {
       label: "Dataset 1",
-      data: [13, 47, 40, 20, 47, 40, 30],
+      data: [13, 47, 40, 20, 47, 40, 20],
       borderColor: "#7269F4",
       backgroundColor: "white",
     },

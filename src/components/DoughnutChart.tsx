@@ -10,7 +10,7 @@ const doughnutData = {
   labels: ["a", "b", "c", "d"],
   datasets: [
     {
-      data: [13, 47, 40],
+      data: [10, 50, 40],
       backgroundColor: colors,
     },
   ],
