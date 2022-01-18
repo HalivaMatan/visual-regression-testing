@@ -34,7 +34,7 @@ const DashboardCard: React.FunctionComponent<IDashboardCardProps> = (props) => {
             }
             title={props.title}
           />{" "}
-          <Divider sx={{ backgroundColor: "#22242D", height: "3px" }} />
+          <Divider sx={{ backgroundColor: "#22242D", height: "2px" }} />
         </>
       )}
 
