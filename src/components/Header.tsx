@@ -10,7 +10,7 @@ const Header: FC<IHeaderProps> = () => {
         <Typography
           variant="h5"
           component="div"
-          color="blueviolet"
+          color="green"
           sx={{ flexGrow: 1 }}
         >
           Dashboard
