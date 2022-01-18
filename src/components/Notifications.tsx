@@ -49,7 +49,7 @@ const Notifications: React.FunctionComponent<INotificationsProps> = () => {
               <ErrorOutlineIcon sx={{ fontSize: "57px", marginRight: 2 }} />
             </ListItemAvatar>
             <ListItemText
-              secondaryTypographyProps={{ style: { color: "#B8BACD" } }}
+              secondaryTypographyProps={{ style: { color: "red" } }}
               primary={user.name}
               secondary={user.title}
             />
