@@ -61,7 +61,7 @@ function App() {
               ></ProgressBar>
               <ProgressBar
                 title="Speed"
-                value={80}
+                value={70}
                 maxValue={100}
               ></ProgressBar>
             </Grid>
