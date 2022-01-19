@@ -30,7 +30,7 @@ const Toggle: React.FunctionComponent<IToggleButtonProps> = (props) => {
     >
       <Typography sx={{ flexGrow: 1 }}>{props.title}</Typography>
       <ToggleButtonGroup
-        color="error"
+        color="success"
         value={alignment}
         exclusive
         onChange={handleChange}
