@@ -17,7 +17,7 @@ const Header: FC<IHeaderProps> = () => {
           Dashboard
         </Typography>
         <ErrorOutlineIcon sx={{ fontSize: "57px", marginRight: 2 }} />
-        <Button color="inherit">Login</Button>
+        <Button color="inherit">Login Now</Button>
       </Toolbar>
     </AppBar>
   );
