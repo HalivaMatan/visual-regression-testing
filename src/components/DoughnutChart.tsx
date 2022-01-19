@@ -19,7 +19,7 @@ interface IDoughnutChartProps {}
 
 const DoughnutChart: React.FunctionComponent<IDoughnutChartProps> = () => {
   // return <Doughnut data={doughnutData} />;
-  return <Typography color="error">Click to try again</Typography>;
+  return <Typography color="error">Click to Send Message</Typography>;
 };
 
 export default DoughnutChart;
