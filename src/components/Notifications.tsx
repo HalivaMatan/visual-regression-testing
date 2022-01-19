@@ -11,7 +11,7 @@ const notifications = [
   },
   {
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    title: "15/2/2021 15:00",
+    title: "15/2/2021 14:00",
   },
   {
     name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
