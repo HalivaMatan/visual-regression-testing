@@ -29,12 +29,12 @@ const DashboardCard: React.FunctionComponent<IDashboardCardProps> = (props) => {
           <CardHeader
             action={
               <IconButton aria-label="settings">
-                <MoreVertIcon sx={{ color: "white" }} />
+                <MoreVertIcon sx={{ color: "green" }} />
               </IconButton>
             }
             title={props.title}
           />{" "}
-          <Divider sx={{ backgroundColor: "#22242D", height: "2px" }} />
+          <Divider sx={{ backgroundColor: "#43242D", height: "2px" }} />
         </>
       )}
 
