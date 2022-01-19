@@ -1,13 +1,12 @@
 # A sample pipeline implementation
 pipelines:
   default:
-    "**":
-      - step:
-          image: node:16
-          name: "Publish to Chromatic"
-          script:
-            - npm install
-            - npm run chromatic:local
+    - step:
+        image: node:16
+        name: "Publish to Chromatic"
+        script:
+          - npm install
+          - npm run chromatic:local
   pull-requests:
     "**":
       - step:
