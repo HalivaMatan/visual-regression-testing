@@ -37,7 +37,11 @@ interface ILineChartProps {}
 
 const LineChart: React.FunctionComponent<ILineChartProps> = () => {
   // return <Line data={lineData} />;
-  return <Typography color="error">Send</Typography>;
+  return (
+    <Typography color="error">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </Typography>
+  );
 };
 
 export default LineChart;
