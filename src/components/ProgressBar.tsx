@@ -17,7 +17,7 @@ const ProgressBar: React.FunctionComponent<IProgressBarProps> = (props) => {
         maxValue={props.maxValue}
         text={`${props.value}%`}
       />
-      <Typography sx={{ fontWight: 400 }} marginTop={1}>
+      <Typography sx={{ fontWight: 700 }} marginTop={1}>
         {props.title}
       </Typography>
     </Grid>
