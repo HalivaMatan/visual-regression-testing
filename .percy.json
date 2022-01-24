@@ -2,11 +2,7 @@
   "version": 2,
   "snapshot": {
     "widths": [
-      320,
-      600,
-      960,
-      1280,
-      1800
+      1280
     ],
     "minHeight": 1024,
     "percyCSS": ""
