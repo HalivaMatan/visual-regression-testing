@@ -1,6 +1,6 @@
 import { AppBar, Button, Toolbar, Typography } from "@mui/material";
 import { FC } from "react";
-import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
+import PlayArrow from "@mui/icons-material/PlayArrow";
 
 interface IHeaderProps {}
 
@@ -16,7 +16,7 @@ const Header: FC<IHeaderProps> = () => {
         >
           Dashboard
         </Typography>
-        <ErrorOutlineIcon sx={{ fontSize: "57px", marginRight: 2 }} />
+        <PlayArrow sx={{ fontSize: "57px", marginRight: 2 }} />
         <Button color="inherit">Login Now</Button>
       </Toolbar>
     </AppBar>
