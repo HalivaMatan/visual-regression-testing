@@ -29,11 +29,15 @@ jobs:
     runs-on: ubuntu-latest
     # Job steps
     steps:
-      - name: Publish to Percy
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        name: checkout
+      - name: setup node
+        uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - run: npm install
-      - run: npm run build-storybook -- --quiet
-      - run: npm run percy
+      - name: npm install
+        run: npm install
+      - name: build storybook
+        run: npm run build-storybook -- --quiet
+      - name: Publish to Percy
+        run: npm run percy
