@@ -7,3 +7,11 @@ pipelines:
           script:
             - npm install
             - npm run chromatic
+  # push:
+  #   "master":
+  #     - step:
+  #         image: node:16
+  #         name: "Publish to Chromatic"
+  #         script:
+  #           - npm install
+  #           - npm run chromatic:local
